@@ -1,24 +1,19 @@
-import styles from './App.module.scss';
+import { useMediaQuery } from 'react-responsive';
 
+import styles from './App.module.scss';
+import DesktopNav from './components/Nav/DesktopNav';
+import MobileNav from './components/Nav/MobileNav';
+import DesktopProblemAnswer from './components/Problem&Answer/DestopProblemAnswer';
+import MobileProblemAnswer from './components/Problem&Answer/MoibleProblemAnswer';
 
 function App() {
+   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 968px)' })
 
+   console.log('isTablet/Mobile: ', isTabletOrMobile);
   return (
    <div>
     <header>
-      <nav className={styles.navWrapper}>
-         <img src='./logo_white.png' alt='Pixel Bloom Logo'/>
-         <div>
-          <ul>
-            <li>Home</li>
-            <li>Work</li>
-            <li>Price</li>
-            <li>FAQs</li>
-            <li><a href='https://billing.stripe.com/p/login/dR601t7tb8upcBW7ss' target='_blank'>Login</a></li>
-          </ul>
-         </div>
-         <button> Get Started</button>
-      </nav>
+      {isTabletOrMobile ? <MobileNav /> : <DesktopNav />}
     </header>
     
     <div className={styles.hero}>
@@ -32,36 +27,7 @@ function App() {
     </div>
       
     
-    <div className={styles.content}>
-        <div className={styles.section}>
-          <div className={styles.keyTitle}>
-            <p className={styles.sectionHeader}>Your ultimate creative ally</p>
-            <p>
-              Finding skilled and reliable freelancers can be time-consuming and unpredictable, 
-              while in-house hires are costly and often requires time to train them up. You 
-              don't need an agency or freelancer. you need an extension to your 
-              in-house team.
-            </p>
-          </div>
-        </div>
-        <div  className={styles.section} />
-    </div>
-    <div className={styles.content}>
-        <div className={styles.section} />
-          <div
-            className={styles.section}
-            style={{marginTop: '-5em'}}
-            >
-            <div className={styles.theAnswer}>
-              <p className={styles.sectionHeader}>The Better Way</p>
-              <p>
-              Your brand designs are too important to be left in the hands of unreliable freelancers 
-              or expensive creative agencies. Why not hire an experienced, full-time designer 
-              who knows you by name and your brand by heart?
-              </p>
-            </div>
-          </div>
-    </div>
+      {isTabletOrMobile ? <MobileProblemAnswer /> : <DesktopProblemAnswer />}
        
         <div className={styles.planIncludes}>
           <div className={styles.section}>

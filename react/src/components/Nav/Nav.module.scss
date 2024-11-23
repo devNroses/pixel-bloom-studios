@@ -1,0 +1,51 @@
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 40px;
+
+    img {
+        max-width: 250px;
+        min-width: 180px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 400px;
+        font-size: 1em;
+        margin: 0px;
+        padding: 0px;
+        // gap: 60px;
+        justify-content: space-evenly;
+
+        li {
+            font-weight: 600;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 1em;
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        transition: all 1s ease-out;
+
+        &:hover {
+            background-color: yellow;
+            color: #111;
+        }
+    }
+}
+
+/* --- Mobile Styles --- */
+
+.mobileLogo {
+    max-width: 200px !important;
+}
+
+.mobileButton{
+    width: 150px !important;
+}
