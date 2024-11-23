@@ -1,0 +1,303 @@
+p {
+    font-size: 1.05em;;
+    margin: 0;
+    height: max-content;
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 40px;
+
+    img {
+        max-width: 250px;
+        min-width: 180px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 400px;
+        font-size: 1em;
+        margin: 0px;
+        padding: 0px;
+        gap: 60px;
+        justify-content: flex-start;
+
+        li {
+            font-weight: 600;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 1em;
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        transition: all 1s ease-out;
+
+        &:hover {
+            background-color: yellow;
+            color: #111;
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    h1 {
+        font-size: 4em;
+        text-align: center;
+        line-height: 1.25em;
+        margin-bottom: .25em;
+        width: 800px;
+    }
+
+    p {
+      font-size: 1.05em;
+      text-align: center;
+      margin-bottom: 2em;
+      width: 600px;
+    }
+
+    button {
+        background-color: transparent;
+        border-radius: 8px;
+        color: white;
+        width: 200px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-out;
+
+        &:hover {
+            border: 1px solid green;
+            cursor: pointer;
+        }
+    }
+}
+
+.miniPortfolio {
+    display: flex;
+    height: 300px;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionHeader {
+  font-size: 3.35em;
+  font-weight: 700;
+}
+
+.keyTitle {
+    display: flex;
+    background-color: #353535;
+    flex-direction: column;
+    width: calc(100vw - 50%);
+    border-radius: 8px;
+    padding: 3em 40px;
+
+    gap: 1.4em;
+}
+
+.content, .pricing, .planIncludes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+
+    .section {
+        min-height: 100%;
+        min-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        justify-content: center;
+        gap: 1em;
+        padding: 1.25em;
+        margin: 20px 0px;
+
+      .keyIssues {
+        display: flex;
+        height: 144px;
+        flex-basis: calc(50% - 40px);
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.85em;
+    }
+}
+}
+
+.theAnswer {
+    border-radius: 8px;
+    width: 580px;
+    background-color: #111111;;
+    height: 100%;
+    display: flex;;
+    flex-direction: column;;
+    padding: 24px 40px;
+    margin-top: -2em;
+
+    .sectionHeader {
+        margin-top: .8em;
+        margin-bottom: .2em;
+        font-size: 1.8em;
+    }
+}
+
+.pricing {
+    gap: 2em;
+
+    h1 {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.1;
+        font-family: Helvetica, sans-serif;
+    }
+    .section {
+        justify-content: flex-start;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .minorOfferings {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 1em;
+
+                &:first-child{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                &:nth-child(2){
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+
+                    span {
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                } 
+
+                &:nth-child(3){
+                    font-size: 15px;
+                    line-height: 1.25;
+                    max-width: 450px;
+                }
+            }
+        }
+    }
+
+    .packages {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid hotpink;
+        border-radius: 8px;;
+        padding: 20px;
+        width: 100%;
+
+        h2 {
+            font-size: 42px;
+            margin: 0px 0px 24px;
+        }
+
+        .pricing {
+            font-size: 42px;
+            span {
+                margin-top: 8px;
+                margin-left: -76px;
+                font-size: 22px;
+                padding-top: 2px;
+                align-items: center;
+                display: flex;
+
+            }
+        }
+
+        .pricingDescription {
+            font-size: 15px;
+        }
+
+        hr { 
+            border: 1px solid #eee;
+            margin: 48px 0px;
+        }
+    }
+}
+
+.planIncludes {
+    display: flex;
+    margin: 40px 0px;
+    background-color: #353535;
+    padding: 40px;
+
+    .moreInfo {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        font-size: 15px;
+        text-transform: uppercase;
+
+        hr {
+            border: 1px solid white;
+            height: 1px;
+            background-color: white;
+            padding: 0px;
+            margin: 0px;
+            width: 150px;
+            margin-right: 16px;
+        }
+    }
+
+      h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 30px 0px 20px;
+        }
+}
+
+.membershipBenefits {
+  flex-wrap: wrap;
+  display: flex;
+    li {
+      flex: 1 0 45%;
+      margin-left: 8px;
+      margin-bottom: 16px;
+
+      p {
+        &:first-child {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &:last-child {
+            width: 85%;
+        }
+      }
+    }
+}
