@@ -23,6 +23,7 @@ a:hover {
 }
 
 body{
+  background-image: url('./assets/backgroundImg.png');
   background-color: #F7F8F1;
   color: #111;
 }

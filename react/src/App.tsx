@@ -11,7 +11,7 @@ function App() {
 
    console.log('isTablet/Mobile: ', isTabletOrMobile);
   return (
-   <div>
+   <>
     <header>
       {isTabletOrMobile ? <MobileNav /> : <DesktopNav />}
     </header>
@@ -107,7 +107,7 @@ function App() {
             <div className={styles.packages}>
               <h2>Base Package</h2>
 
-              <p className={styles.pricing}>$2,995 <span>per month</span></p>
+              <p className={styles.pricingLabel}>$2,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
                 One active request at a time. Pause or cancel anytime.
               </p>
@@ -122,7 +122,7 @@ function App() {
             <div className={styles.packages}>
               <h2>Premium Package</h2>
 
-              <p className={styles.pricing}>$4,995 <span>per month</span></p>
+              <p className={styles.pricingLabel}>$4,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
                Two active requests at a time. Pause or cancel anytime.
               </p>
@@ -135,7 +135,7 @@ function App() {
           </div>
         </div>
 
-   </div>
+   </>
   )
 }
 
