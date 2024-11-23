@@ -14,6 +14,7 @@ function App() {
             <li>Work</li>
             <li>Price</li>
             <li>FAQs</li>
+            <li><a href='https://billing.stripe.com/p/login/dR601t7tb8upcBW7ss' target='_blank'>Login</a></li>
           </ul>
          </div>
          <button> Get Started</button>
@@ -138,9 +139,9 @@ function App() {
           </div>
           <div className={styles.section}>
             <div className={styles.packages}>
-              <h2>Membershps</h2>
+              <h2>Base Package</h2>
 
-              <p className={styles.pricing}>$4,995 <span>per month</span></p>
+              <p className={styles.pricing}>$2,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
                 One active request at a time. Pause or cancel anytime.
               </p>
@@ -153,11 +154,11 @@ function App() {
           </div>
           <div className={styles.section}>
             <div className={styles.packages}>
-              <h2>Custom Projects</h2>
+              <h2>Premium Package</h2>
 
-              <p className={styles.pricing}>$5,000+</p>
+              <p className={styles.pricing}>$4,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
-                Will require a project consultation, strategy, design plan and build plan.
+               Two active requests at a time. Pause or cancel anytime.
               </p>
 
               <hr />
@@ -173,3 +174,21 @@ function App() {
 }
 
 export default App
+
+
+//  <div className={styles.section}>
+//             <div className={styles.packages}>
+//               <h2>Custom Projects</h2>
+
+//               <p className={styles.pricing}>$5,000+</p>
+//               <p className={styles.pricingDescription}>
+//                 Will require a project consultation, strategy, design plan and build plan.
+//               </p>
+
+//               <hr />
+
+//               <p>What's included</p>
+              
+//             </div>
+//           </div>
+//         </div>

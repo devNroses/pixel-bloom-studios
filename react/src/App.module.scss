@@ -23,8 +23,8 @@ p {
         font-size: 1em;
         margin: 0px;
         padding: 0px;
-        gap: 60px;
-        justify-content: flex-start;
+        // gap: 60px;
+        justify-content: space-evenly;
 
         li {
             font-weight: 600;
@@ -181,7 +181,7 @@ p {
         .minorOfferings {
             border: 1px solid #eee;
             border-radius: 8px;
-            padding: 1em;
+            padding: 20px;
             display: flex;
             flex-direction: column;
 
@@ -218,7 +218,7 @@ p {
         flex-direction: column;
         border: 1px solid hotpink;
         border-radius: 8px;;
-        padding: 20px;
+        padding: 30px;
         width: 100%;
 
         h2 {
