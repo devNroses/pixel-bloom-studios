@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from './App.module.scss';
@@ -16,11 +17,13 @@ function App() {
       {isTabletOrMobile ? <MobileNav /> : <DesktopNav />}
     </header>
     
-    <div className={styles.hero}>
+    <motion.div 
+      className={styles.hero}
+    >
       <h1>A creative agency with a unique spin.</h1>
       <p>Design subscriptions made for everyone—flexible, hassle-free, and yours to pause or cancel anytime.</p>
       <button>Create Beyond Limits</button>
-    </div>
+    </motion.div>
 
     <div className={styles.miniPortfolio}>
       <p>Portfolio here</p>
@@ -33,7 +36,7 @@ function App() {
           <div className={styles.section}>
             <div>
               
-              <p className={styles.moreInfo}> <hr /> included in all monthly and custom plans</p>
+              <p className={styles.moreInfo}> <hr /> included in all monthly plans</p>
               <h2>Exclusive membership benefits</h2>
 
               <p>
@@ -72,39 +75,46 @@ function App() {
           </div>
         </div>
 
+        <div className={styles.statement}>
+         <p>
+          Let pixel bloom take care of the creative and bring your ideas to life
+         </p>
+        </div>
         <div className={styles.pricing}>
           <div className={styles.section}>
-            <h1>Join <br /> Pixel Bloom</h1>
+            <div className={styles.joinOptions}>
+              <h1>Join <br /> Pixel Bloom</h1>
 
-            <div className={styles.options}>
-                <div className={styles.minorOfferings} role='button'>
-                  <p>Book Day Rates</p>
-                  <p>
-                    $1000
-                    <span>/day</span>
-                  </p>
-                  <p>
-                    Can book day rates for up to 12 days at a time. 
-                    Delivery of assets will be determined by the 
-                    scope of work needed.
-                  </p>
-                </div>
-                <div className={styles.minorOfferings} role='button'>
-                  <p>Consultation</p>
-                  <p>
-                    $500 <span>*up tp 2 hrs</span>
-                  </p>
-                  <p>
-                    Can book up to two hours to review your website 
-                    UI/UX experience and will provide a strategy on 
-                    how to improve features to drive better 
-                    expereinec for your customers. 
-                  </p>
-                </div>
+              <div className={styles.options}>
+                  <div className={styles.minorOfferings} role='button'>
+                    <p>Book Day Rates</p>
+                    <p>
+                      $1000
+                      <span>/day</span>
+                    </p>
+                    <p>
+                      Can book day rates for up to 12 days at a time. 
+                      Delivery of assets will be determined by the 
+                      scope of work needed.
+                    </p>
+                  </div>
+                  <div className={styles.minorOfferings} role='button'>
+                    <p>Consultation</p>
+                    <p>
+                      $500 <span>*up tp 2 hrs</span>
+                    </p>
+                    <p>
+                      Can book up to two hours to review your website 
+                      UI/UX experience and will provide a strategy on 
+                      how to improve features to drive better 
+                      expereinec for your customers. 
+                    </p>
+                  </div>
+              </div>
             </div>
           </div>
           <div className={styles.section}>
-            <div className={styles.packages}>
+            <div className={styles.packagesBasic}>
               <h2>Base Package</h2>
 
               <p className={styles.pricingLabel}>$2,995 <span>per month</span></p>
@@ -119,7 +129,7 @@ function App() {
             </div>
           </div>
           <div className={styles.section}>
-            <div className={styles.packages}>
+            <div className={styles.packagesPremium}>
               <h2>Premium Package</h2>
 
               <p className={styles.pricingLabel}>$4,995 <span>per month</span></p>
