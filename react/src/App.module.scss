@@ -173,6 +173,20 @@ p {
                     max-width: 450px;
                 }
             }
+
+            a {
+            text-decoration: none;
+            display: flex;
+            margin: 16px auto 0px;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 40px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #0B3954;
+            border-radius: 8px;
+        }
         }
     }
 
@@ -214,6 +228,30 @@ p {
         hr { 
             border: 1px solid #0B3954;
             margin: 48px 0px;
+        }
+
+        ul {
+            flex-wrap: wrap;
+            display: flex;
+            gap: 20px;
+            li {
+                flex: 1 0 54%;
+                margin-left: 0px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            margin: auto 0px 0px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            border: 1px solid #0B3954;
+            background-color: #0B3954;
+            color: #1EFFBC;
+            border-radius: 8px;
         }
     }
 

@@ -87,28 +87,32 @@ function App() {
 
               <div className={styles.options}>
                   <div className={styles.minorOfferings} role='button'>
-                    <p>Book Day Rates</p>
-                    <p>
-                      $1000
-                      <span>/day</span>
-                    </p>
-                    <p>
-                      Can book day rates for up to 12 days at a time. 
-                      Delivery of assets will be determined by the 
-                      scope of work needed.
-                    </p>
+                      <p>Book Day Rates</p>
+                      <p>
+                        $1000
+                        <span>/day</span>
+                      </p>
+                      <p>
+                        Can book day rates for up to 12 days at a time. 
+                        Delivery of assets will be determined by the 
+                        scope of work needed.
+                      </p>
+
+                      <a target='_blank'>Book Time</a>
                   </div>
                   <div className={styles.minorOfferings} role='button'>
-                    <p>Consultation</p>
-                    <p>
-                      $500 <span>*up tp 2 hrs</span>
-                    </p>
-                    <p>
-                      Can book up to two hours to review your website 
-                      UI/UX experience and will provide a strategy on 
-                      how to improve features to drive better 
-                      expereinec for your customers. 
-                    </p>
+                      <p>Consultation</p>
+                      <p>
+                        $500 <span>*up tp 2 hrs</span>
+                      </p>
+                      <p>
+                        Can book up to two hours to review your website 
+                        UI/UX experience and will provide a strategy on 
+                        how to improve features to drive better 
+                        expereinec for your customers. 
+                      </p>
+
+                       <a target='_blank'>Book time</a>
                   </div>
               </div>
             </div>
@@ -125,7 +129,18 @@ function App() {
               <hr />
 
               <p>What's included</p>
+              <ul>
+                <li>One request at a time</li>
+                <li>Average 72 hour delivery</li>
+                <li>Unlimited brands</li>
+                <li>Pause or cancel anytime</li>
+                <li>Unlimited revisions</li>
+                <li>Unlimited users</li>
+                <li>Squarespace development available</li>
+                <li>Framer development available</li>
+              </ul>
               
+              <a target='_blank'>Get Started</a>
             </div>
           </div>
           <div className={styles.section}>
@@ -140,7 +155,18 @@ function App() {
               <hr />
 
               <p>What's included</p>
-              
+               <ul>
+                <li>Two requests at a time</li>
+                <li>Average 72 hour delivery</li>
+                <li>Unlimited brands</li>
+                <li>Pause or cancel anytime</li>
+                <li>Unlimited revisions</li>
+                <li>Unlimited users</li>
+                <li>Squarespace development available</li>
+                <li>Framer development available</li>
+              </ul>
+
+              <a target='_blank'>Get Started</a>
             </div>
           </div>
         </div>
