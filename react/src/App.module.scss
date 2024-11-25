@@ -29,9 +29,9 @@ p {
 
     button {
         background-color: #1EFFBC;
-        border: 1px solid #F7F8F1;
+        border: 1px solid #1EFFBC;
         border-radius: 8px;
-        color: #111;
+        color: #303030;
         width: 200px;
         height: 40px;
         font-size: 1em;
@@ -40,10 +40,10 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 1s ease-out;
+        transition: all .5s ease-out;
 
         &:hover {
-            border: 1px solid #1EFFBC;
+            border: 1px solid #303030;
             background-color: #303030;
             color: #1EFFBC;
             cursor: pointer;
@@ -186,6 +186,13 @@ p {
             background-color: #fff;
             color: #0B3954;
             border-radius: 8px;
+            transition: all .5s ease-out;
+
+            &:hover{
+                background-color: #0B3954;
+                border: 1px solid #fff;
+                color: white;
+            }
         }
         }
     }
@@ -252,6 +259,13 @@ p {
             background-color: #0B3954;
             color: #1EFFBC;
             border-radius: 8px;
+            transition: all .5s ease-out;
+
+            &:hover{
+                background-color: #1EFFBC;
+                border: 1px solid #1EFFBC;
+                color: #0B3954;
+            }
         }
     }
 
