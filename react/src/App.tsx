@@ -98,7 +98,7 @@ function App() {
                         scope of work needed.
                       </p>
 
-                      <a target='_blank'>Book Time</a>
+                      <a href="https://buy.stripe.com/9AQcOpbpx8edcXm289" target='_blank'>Book Time</a>
                   </div>
                   <div className={styles.minorOfferings} role='button'>
                       <p>Consultation</p>
@@ -112,7 +112,7 @@ function App() {
                         expereinec for your customers. 
                       </p>
 
-                       <a target='_blank'>Book time</a>
+                       <a href="https://buy.stripe.com/14k6q1bpx6655uU28a" target='_blank'>Book time</a>
                   </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ function App() {
             <div className={styles.packagesBasic}>
               <h2>Base Package</h2>
 
-              <p className={styles.pricingLabel}>$2,995 <span>per month</span></p>
+              <p className={styles.pricingLabel}>$1,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
                 One active request at a time. Pause or cancel anytime.
               </p>
@@ -140,14 +140,14 @@ function App() {
                 <li>Framer development available</li>
               </ul>
               
-              <a target='_blank'>Get Started</a>
+              <a href="https://buy.stripe.com/14kdStgJR2TT9LafZ1" target='_blank'>Get Started</a>
             </div>
           </div>
           <div className={styles.section}>
             <div className={styles.packagesPremium}>
               <h2>Premium Package</h2>
 
-              <p className={styles.pricingLabel}>$4,995 <span>per month</span></p>
+              <p className={styles.pricingLabel}>$3,995 <span>per month</span></p>
               <p className={styles.pricingDescription}>
                Two active requests at a time. Pause or cancel anytime.
               </p>
@@ -166,7 +166,7 @@ function App() {
                 <li>Framer development available</li>
               </ul>
 
-              <a target='_blank'>Get Started</a>
+              <a href="https://buy.stripe.com/3csaGhalt521aPe7sw" target='_blank'>Get Started</a>
             </div>
           </div>
         </div>

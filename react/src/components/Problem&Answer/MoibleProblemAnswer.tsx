@@ -6,7 +6,7 @@ const MobileProblemAnswer = () => {
             <div className={styles.content}>
                  <div className={styles.section}>
                     <div className={styles.keyMobileTitle}>
-                        <p className={styles.sectionMobileHeader}>Your ultimate creative ally</p>
+                        <p className={styles.sectionMobileHeader}>Your Ultimate Creative Ally</p>
                         <p>
                         Finding skilled and reliable freelancers can be time-consuming and unpredictable, 
                         while in-house hires are costly and often requires time to train them up. You 
