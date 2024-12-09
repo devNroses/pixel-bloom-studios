@@ -105,6 +105,12 @@ p {
         line-height: 1.25;
         width: 60%;
     }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .pricing {

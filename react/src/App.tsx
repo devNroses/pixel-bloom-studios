@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
+import { Element } from 'react-scroll';
 
 import styles from './App.module.scss';
 import DesktopNav from './components/Nav/DesktopNav';
 import MobileNav from './components/Nav/MobileNav';
+import Portfolio from './components/Portfolio/Portfolio';
 import DesktopProblemAnswer from './components/Problem&Answer/DestopProblemAnswer';
 import MobileProblemAnswer from './components/Problem&Answer/MoibleProblemAnswer';
 
@@ -26,7 +28,9 @@ function App() {
     </motion.div>
 
     <div className={styles.miniPortfolio}>
-      <p>Portfolio here</p>
+       <Element name="portfolio">
+          <Portfolio />
+       </Element>
     </div>
       
     
@@ -34,6 +38,7 @@ function App() {
        
         <div className={styles.planIncludes}>
           <div className={styles.section}>
+            <Element name="benefits">             
             <div>
               
               <p className={styles.moreInfo}> <hr /> included in all monthly plans</p>
@@ -44,6 +49,7 @@ function App() {
                 No lengthy hiring processes. No contracts. Just your hit list of work getting done!
               </p>
             </div>
+            </Element>
           </div>
           <div className={styles.section}>
             <ul className={styles.membershipBenefits}>
@@ -76,9 +82,11 @@ function App() {
         </div>
 
         <div className={styles.statement}>
-         <p>
-          Let pixel bloom take care of the creative and bring your ideas to life
-         </p>
+           <Element name="packages">
+            <p>
+              Let pixel bloom take care of the creative and bring your ideas to life
+            </p>
+          </Element>
         </div>
         <div className={styles.pricing}>
           <div className={styles.section}>
