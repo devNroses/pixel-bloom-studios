@@ -53,8 +53,9 @@ p {
 
 .miniPortfolio {
     display: flex;
-    height: 300px;
+    height: auto;
     margin-top: -20px;
+    margin-bottom: 40px;
     justify-content: center;
     align-items: center;
 }
