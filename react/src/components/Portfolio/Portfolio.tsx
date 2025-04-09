@@ -7,21 +7,17 @@ const Portfolio = () => {
     const portfolioList = [
         {
             id: "p01",
-            name: 'project1',
-            description: 'project description',
-            link: 'www.nike.com'
+            name: 'Suchocki Enterprises',
+            description: 'Web Design and Squarespace build. This project included a logo redesign, new brand colors and website refresh.',
+            link: 'https://www.suchockient.com/',
+            img: './SuschockiEntWebsite.png',
         },
         {
             id: "p02",
-            name: 'project2',
-            description: 'project description',
-            link: 'www.nike.com'
-        },
-        {
-            id: "p03",
-            name: 'project3',
-            description: 'project description',
-            link: 'www.nike.com'
+            name: 'Poshy Paws Mobile',
+            description: 'Web Design, Squarespace build, created logo, and brand guide. Mobile dog grooming company in Phoenix AZ who pivoted from a store front to a mobile grooming fleet.',
+            link: 'https://www.poshypawsmobile.com/',
+            img: './PoshyPaws.png'
         },
     ]
     return (
@@ -37,9 +33,19 @@ const Portfolio = () => {
                     }}
                     onMouseEnter={() => setHoverProject(project.id)}
                     onMouseLeave={() => setHoverProject(undefined)}
-                    style={{ backgroundColor: project.id === hoverProject ? 'lightgray' : 'white' }}
+                    style={{ 
+                        backgroundColor: project.id === hoverProject ? 'lightgray' : 'white', 
+                        backgroundImage: `url(${project.img})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'
+                    }}
                 > 
-                    {project.id === hoverProject ? "show Me" : project.name}
+                    <div className={styles.description}>
+                        <h1>{project.name}</h1>
+                        <p>{project.description}</p>
+                        <a href={project.link} target='_blank'> View Project</a>
+                    </div>
+                    {/* {project.id === hoverProject ? "show Me" : project.name} */}
                 </motion.div>
             ))}
         </div>

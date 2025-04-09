@@ -5,8 +5,38 @@
     gap: 3vw;
 
     div{
-        border: 2px dashed hotpink;
         width: 400px;
         height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+    }
+}
+
+.description {
+    display: flex;
+    top: 0;
+    padding-bottom: 16px;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 60%);
+    height: 150px !important;
+
+    h1 {
+        font-size: 24px;
+        padding-left: 16px;
+    }
+
+    p{
+        font-size: 12px !important;
+        padding: 0 16px;
+    }
+
+    a{
+        color: #1EFFBC;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 16px;
+        margin-top: 8px;
     }
 }
