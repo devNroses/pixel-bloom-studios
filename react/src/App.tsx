@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import { Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import styles from './App.module.scss';
 import DesktopNav from './components/Nav/DesktopNav';
@@ -12,7 +13,6 @@ import MobileProblemAnswer from './components/Problem&Answer/MoibleProblemAnswer
 function App() {
    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 968px)' })
 
-   console.log('isTablet/Mobile: ', isTabletOrMobile);
   return (
    <>
     <header>
@@ -24,7 +24,11 @@ function App() {
     >
       <h1>A creative agency with a unique spin.</h1>
       <p>Design subscriptions made for everyone—flexible, hassle-free, and yours to pause or cancel anytime.</p>
-      <button>Create Beyond Limits</button>
+      <button>
+         <Link activeClass="active" to="packages" spy={true} smooth={true} offset={-70} duration={1500}>
+           Create Beyond Limits
+         </Link>
+      </button>
     </motion.div>
 
     <div className={styles.miniPortfolio}>
