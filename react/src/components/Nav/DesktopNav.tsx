@@ -5,7 +5,7 @@ import styles from './Nav.module.scss';
 const DesktopNav = () => {
    return(
        <nav className={styles.navWrapper}>
-         <img src='./logo_black.png' alt='Pixel Bloom Logo'/>
+         <img src='./logo_black.png' alt='Kurator Lab Logo'/>
          <div>
           <ul>
             <li>

@@ -88,14 +88,14 @@ function App() {
         <div className={styles.statement}>
            <Element name="packages">
             <p>
-              Let pixel bloom take care of the creative and bring your ideas to life
+              Let kurator lab take care of the creative and bring your ideas to life
             </p>
           </Element>
         </div>
         <div className={styles.pricing}>
           <div className={styles.section}>
             <div className={styles.joinOptions}>
-              <h1>Join <br /> Pixel Bloom</h1>
+              <h1>Join <br /> Kurator Lab</h1>
 
               <div className={styles.options}>
                   <div className={styles.minorOfferings} role='button'>

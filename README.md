@@ -1,2 +1,2 @@
-# pixel-bloom-studios
-Pixel Bloom Studios
+# kurator-lab
+Kurator Lab
