@@ -333,6 +333,8 @@ p {
 .membershipBenefits {
   flex-wrap: wrap;
   display: flex;
+  gap: 16px;
+  
     li {
       flex: 1 0 45%;
       margin-left: 8px;

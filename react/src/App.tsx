@@ -21,8 +21,14 @@ function App() {
     
     <motion.div 
       className={styles.hero}
+      style={{
+        height: isTabletOrMobile ? '50vh' : undefined,
+
+      }}
     >
-      <h1>A creative agency with a unique spin.</h1>
+      <h1
+        style={{ fontSize: isTabletOrMobile ? '2em' : undefined }}
+      >A creative agency with a unique spin.</h1>
       <p>Design subscriptions made for everyone—flexible, hassle-free, and yours to pause or cancel anytime.</p>
       <button>
          <Link activeClass="active" to="packages" spy={true} smooth={true} offset={-70} duration={1500}>
@@ -85,7 +91,10 @@ function App() {
           </div>
         </div>
 
-        <div className={styles.statement}>
+        <div 
+          className={styles.statement}
+          style={{ fontSize: isTabletOrMobile ? '14px' : undefined }}
+        >
            <Element name="packages">
             <p>
               Let kurator lab take care of the creative and bring your ideas to life
