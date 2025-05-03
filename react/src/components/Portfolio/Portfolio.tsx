@@ -19,6 +19,13 @@ const Portfolio = () => {
             link: 'https://www.poshypawsmobile.com/',
             img: './PoshyPaws.png'
         },
+        {
+            id: "p03",
+            name: 'Kingdom Kuts',
+            description: 'Website refactor and site transfer to Netlify',
+            link: 'https://kingdomkutspdx.com/',
+            img: './kingdomKuts.png'
+        },
     ]
     return (
         <div className={styles.wrapper}>
